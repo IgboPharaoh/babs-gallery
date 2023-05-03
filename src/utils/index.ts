@@ -1,5 +1,9 @@
 import { AlbumArray, Photo } from '../interfaces';
 
+export const RANGE = 3;
+
+export const MINIMUMVALUE = 2;
+
 export const trimDescription = (args: string) => {
     if (args.length > 112) {
         return `${args.substring(0, 110)}.....`;
@@ -37,4 +41,3 @@ export const discover = (): string => {
     let randomNumber = Math.floor(Math.random() * 7);
     return arr[randomNumber];
 };
-

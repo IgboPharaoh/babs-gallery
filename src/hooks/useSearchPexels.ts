@@ -1,7 +1,7 @@
 import { ChangeEvent, useEffect, useMemo, useState } from 'react';
 import { API } from '../api/api';
 import { Pagination, Photo } from '../interfaces';
-import { albumSetArray } from '../utils';
+import { albumSetArray, MINIMUMVALUE, RANGE } from '../utils';
 import { toastResponse } from '../utils/toastUtils';
 
 export const useSearchPexels = () => {
@@ -26,11 +26,11 @@ export const useSearchPexels = () => {
                 Promise.resolve([]);
             }
 
-            if (!searchTerm && searchTerm.length < 3) {
+            if (!searchTerm && searchTerm.length < RANGE) {
                 Promise.resolve([]);
             }
 
-            if (searchTerm.length > 2) {
+            if (searchTerm.length > MINIMUMVALUE) {
                 try {
                     setIsLoading(true);
                     let photos = [];

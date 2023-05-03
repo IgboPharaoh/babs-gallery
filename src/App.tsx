@@ -1,7 +1,7 @@
 import { Box, Button, Flex } from '@chakra-ui/react';
 import Header from './components/Header';
 import Wrapper from './components/Wrapper';
-import { trimDescription } from './utils';
+import { RANGE, trimDescription } from './utils';
 import { useSearchPexels } from './hooks/useSearchPexels';
 
 import PhotoAlbum from 'react-photo-album';
@@ -35,7 +35,7 @@ function App() {
                 </Box>
                 <Wrapper>
                     <Box p={{ base: '12px', sm: '24px', md: '24px', lg: '24px' }}>
-                        {!albumArray && searchTerm.length >= 3 ? (
+                        {!albumArray.length && searchTerm.length >= RANGE ? (
                             <ErrorHandler searchTerm={searchTerm} />
                         ) : (
                             <PhotoAlbum

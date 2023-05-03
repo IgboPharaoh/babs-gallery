@@ -1,4 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
+import { RANGE } from '../utils';
 import { toastResponse } from '../utils/toastUtils';
 
 const Axios = axios.create({
@@ -33,7 +34,7 @@ export const API = async (args: string, page: number) => {
         return;
     }
 
-    if (!args && args.length > 3) {
+    if (!args && args.length > RANGE) {
         return;
     }
 
