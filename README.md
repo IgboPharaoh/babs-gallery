@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+## Babs Gallery
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple image gallery used to display images from pexels api in a stylish format. 
 
-## Available Scripts
+libraries used were:
+- React: Javascript UI library which I used for creating user interfaces
+- Typescript: A strongly typed language that builds on javascript and aids in checkmating possible and future errors as types are defined
+- Chakra UI: A component library I used to style the user interafaces and components
+- Axios: A package used to manage api calls and create interceptors
+- React-photo-album: Used to create the image gallery and lightbox functionality
+- Yet-another-react-lightbox: Used in addition with the React-photo-album to create the lightbox feature
 
-In the project directory, you can run:
+ALL libraries combined to create a delightful experience.
 
-### `npm start`
+To run this application, you can make a fork or clone of this repository in your terminal
+- Clone: ```git@github.com:IgboPharaoh/babs-gallery.git``` if you're using ssh or any of your choice
+- Fork: ``` https://github.com/IgboPharaoh/babs-gallery ```
+- cd into the babs-gallery folder
+- code . short-cut to open vscode
+- create a .env file and paste the REACT_APP_API_KEY='' 
+- Open vscode terminal
+- Type ```npm install``` to install necessary dependencies
+- Type ``` npm start``` to start the application
+- Runs the app in the development mode.Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Enter a search term and viola
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<img width="1680" alt="Screenshot 2023-05-03 at 21 59 34" src="https://user-images.githubusercontent.com/87058633/236052513-7d3cfd71-d0c4-44d2-9d8c-4e43944a67cf.png">
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="1680" alt="Screenshot 2023-05-03 at 21 58 57" src="https://user-images.githubusercontent.com/87058633/236052612-bd43e973-9830-488b-b26e-7c29658296d4.png">
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="1680" alt="Screenshot 2023-05-03 at 21 58 40" src="https://user-images.githubusercontent.com/87058633/236052654-cf9cff82-a15e-4ce9-a05b-b34e93cc1c48.png">
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
