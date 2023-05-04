@@ -16,8 +16,8 @@ To run this application, you can make a fork or clone of this repository in your
 - Clone: ```git@github.com:IgboPharaoh/babs-gallery.git``` if you're using ssh or any of your choice
 - Fork: ``` https://github.com/IgboPharaoh/babs-gallery ```
 - cd into the babs-gallery folder
-- code . short-cut to open vscode
-- create a .env file and paste the REACT_APP_API_KEY='' 
+- Type ```code``` . ; a short-cut to open vscode
+- create a .env file in the root folder of the application and paste the pexels api key ```REACT_APP_API_KEY=M2djnmdn8m1BPVZkLbC0XrqDH42vnz86X3SaIRWOuVSAcpZLRIl18Xts```
 - Open vscode terminal
 - Type ```npm install``` to install necessary dependencies
 - Type ``` npm start``` to start the application
